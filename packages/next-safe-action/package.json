@@ -12,8 +12,7 @@
 	"exports": {
 		".": "./dist/index.mjs",
 		"./hooks": "./dist/hooks.mjs",
-		"./stateful-hooks": "./dist/stateful-hooks.mjs",
-		"./adapters/*": "./dist/adapters/*.mjs"
+		"./stateful-hooks": "./dist/stateful-hooks.mjs"
 	},
 	"typesVersions": {
 		"*": {
@@ -25,9 +24,6 @@
 			],
 			"stateful-hooks": [
 				"./dist/stateful-hooks.d.mts"
-			],
-			"adapters/*": [
-				"./dist/adapters/*.d.mts"
 			]
 		}
 	},
@@ -67,7 +63,6 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.19.0",
-		"@sinclair/typebox": "^0.34.15",
 		"@types/node": "^22",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
@@ -85,18 +80,18 @@
 		"tsx": "^4.19.2",
 		"typescript": "^5.7.3",
 		"typescript-eslint": "^8.22.0",
-		"valibot": "^0.42.1",
 		"yup": "^1.6.1",
 		"zod": "^3.24.1"
 	},
 	"peerDependencies": {
-		"@sinclair/typebox": ">= 0.33.3",
+		"@sinclair/typemap": ">= 0.8.0",
+		"arktype": ">= 2.0.0",
 		"next": ">= 14.0.0",
 		"react": ">= 18.2.0",
 		"react-dom": ">= 18.2.0",
-		"valibot": ">= 0.36.0",
+		"valibot": ">= 1.0.0",
 		"yup": ">= 1.0.0",
-		"zod": ">= 3.0.0"
+		"zod": ">= 3.24.0"
 	},
 	"peerDependenciesMeta": {
 		"zod": {
@@ -108,7 +103,10 @@
 		"yup": {
 			"optional": true
 		},
-		"@sinclair/typebox": {
+		"@sinclair/typemap": {
+			"optional": true
+		},
+		"arktype": {
 			"optional": true
 		}
 	},
